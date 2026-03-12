@@ -99,7 +99,7 @@ cerrarMenu.onclick = () => {
       lista.forEach(prod => {
         const precioFinal = calcularPrecio(prod.Precio, prod.Oferta);
         const precioNumerico = parseFloat(prod.Precio?.toString().replace(/\./g, "").replace(",", "."));
-        const numeroWhatsApp = "5493535620336";
+        const numeroWhatsApp = "5493535649674";
         const mensaje = encodeURIComponent(`Hola! Quisiera consultar por el producto: ${prod.Descripcion}`);
         const enlaceWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
 
