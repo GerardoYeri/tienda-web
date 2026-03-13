@@ -105,8 +105,8 @@ cerrarMenu.onclick = () => {
 
         const item = document.createElement("div");
         item.className = `
-          bg-white p-4 rounded-xl shadow hover:shadow-lg transition w-64 flex flex-col justify-between
-        `;
+  bg-white p-4 rounded-xl shadow hover:shadow-lg transition w-full max-w-xs flex flex-col justify-between
+`;
 
         item.innerHTML = `
           <div>
@@ -204,7 +204,8 @@ cerrarMenu.onclick = () => {
         bloque.appendChild(titulo);
 
         const contProd = document.createElement("div");
-        contProd.className = "relative z-10 flex flex-wrap gap-4 justify-center p-6  rounded-t-xl";
+        contProd.className =
+"relative z-10 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 p-6";
         mostrarProductos(agrupados[seccion], contProd);
 
         bloque.appendChild(contProd);
